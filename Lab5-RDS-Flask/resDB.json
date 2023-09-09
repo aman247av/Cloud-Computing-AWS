@@ -1,0 +1,112 @@
+{
+    "DBInstance": {
+        "DBInstanceIdentifier": "mysql-db-instance-lab5",
+        "DBInstanceClass": "db.t2.micro",
+        "Engine": "mysql",
+        "DBInstanceStatus": "creating",
+        "MasterUsername": "admin",
+        "AllocatedStorage": 20,
+        "PreferredBackupWindow": "23: 19-23: 49",
+        "BackupRetentionPeriod": 1,
+        "DBSecurityGroups": [],
+        "VpcSecurityGroups": [
+            {
+                "VpcSecurityGroupId": "sg-075a6a60589393f87",
+                "Status": "active"
+            }
+        ],
+        "DBParameterGroups": [
+            {
+                "DBParameterGroupName": "default.mysql8.0",
+                "ParameterApplyStatus": "in-sync"
+            }
+        ],
+        "AvailabilityZone": "ap-south-1a",
+        "DBSubnetGroup": {
+            "DBSubnetGroupName": "default",
+            "DBSubnetGroupDescription": "default",
+            "VpcId": "vpc-05ca77928f4caa30e",
+            "SubnetGroupStatus": "Complete",
+            "Subnets": [
+                {
+                    "SubnetIdentifier": "subnet-0ca3117f6f6f2428b",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-south-1c"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-035e4c9c69bead117",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-south-1a"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                },
+                {
+                    "SubnetIdentifier": "subnet-02a040186241f81ec",
+                    "SubnetAvailabilityZone": {
+                        "Name": "ap-south-1b"
+                    },
+                    "SubnetOutpost": {},
+                    "SubnetStatus": "Active"
+                }
+            ]
+        },
+        "PreferredMaintenanceWindow": "mon: 08: 26-mon: 08: 56",
+        "PendingModifiedValues": {
+            "MasterUserPassword": "****"
+        },
+        "MultiAZ": "False",
+        "EngineVersion": "8.0.33",
+        "AutoMinorVersionUpgrade": "True",
+        "ReadReplicaDBInstanceIdentifiers": [],
+        "LicenseModel": "general-public-license",
+        "OptionGroupMemberships": [
+            {
+                "OptionGroupName": "default:mysql-8-0",
+                "Status": "in-sync"
+            }
+        ],
+        "PubliclyAccessible": "True",
+        "StorageType": "gp2",
+        "DbInstancePort": 0,
+        "StorageEncrypted": "False",
+        "DbiResourceId": "db-CK6UFV7YEOFW6FRTM6Y5TRB3RE",
+        "CACertificateIdentifier": "rds-ca-2019",
+        "DomainMemberships": [],
+        "CopyTagsToSnapshot": "False",
+        "MonitoringInterval": 0,
+        "DBInstanceArn": "arn:aws:rds:ap-south-1: 115926855272:db:mysql-db-instance-lab5",
+        "IAMDatabaseAuthenticationEnabled": "False",
+        "PerformanceInsightsEnabled": "False",
+        "DeletionProtection": "False",
+        "AssociatedRoles": [],
+        "TagList": [
+            {
+                "Key": "Name",
+                "Value": "MySqlDBInstance"
+            }
+        ],
+        "CustomerOwnedIpEnabled": "False",
+        "BackupTarget": "region",
+        "NetworkType": "IPV4",
+        "StorageThroughput": 0,
+        "CertificateDetails": {
+            "CAIdentifier": "rds-ca-2019"
+        }
+    },
+    "ResponseMetadata": {
+        "RequestId": "b0d18c95-05de-428e-871d-0ec6b979b2d5",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "x-amzn-requestid": "b0d18c95-05de-428e-871d-0ec6b979b2d5",
+            "strict-transport-security": "max-age=31536000",
+            "content-type": "text/xml",
+            "content-length": "4458",
+            "date": "Sat,02 Sep 2023 06: 35: 21 GMT"
+        },
+        "RetryAttempts": 0
+    }
+}
