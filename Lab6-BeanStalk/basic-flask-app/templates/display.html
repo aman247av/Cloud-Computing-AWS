@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+    <style>
+        /* Improved CSS for a more beautiful display */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e4f9f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .data-entry {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data from Database</h1>
+        {% for entry in data %}
+        <br>
+        <div class="data-entry">
+            <h2>{{ entry[1] }}</h2>
+            <p><strong>Email:</strong> {{ entry[2] }}</p>
+            <p><strong>Message:</strong> {{ entry[3] }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
